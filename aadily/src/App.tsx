@@ -51,18 +51,30 @@
 import React from 'react';
 import Navbar from '@/components/Navbar'
 import Hero from './components/Hero';
-import { Code2, Mic, Brain, Zap, Shield, Globe } from 'lucide-react';
+import ProductShowcase from './components/ProductShowcase';
+import Quote from './components/Quote';
+import { Pricing } from './components/Pricing';
+import { Newsletter } from './components/Newsletter';
+import { HowItWorks } from './components/HowItWorks';
+
+
 
 const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-indigo-100 selection:text-indigo-900">
+    
       <Navbar />
       
       <main>
         <Hero />
+        <ProductShowcase/>
+        <HowItWorks/>
+        <Quote/>
+        <Pricing/>
+        
         
         {/* Features Section to pad out the landing page */}
-        <section id="features" className="py-24 bg-slate-50 relative overflow-hidden">
+        {/* <section id="features" className="py-24 bg-slate-50 relative overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Everything you need to succeed</h2>
@@ -116,7 +128,7 @@ const App: React.FC = () => {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
 
       <footer className="bg-white border-t border-slate-100 pt-16 pb-8">

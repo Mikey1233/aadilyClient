@@ -1,16 +1,18 @@
 import React from 'react';
-import { ArrowRight, PlayCircle, CheckCircle2, Code2, BookOpen, Headphones, Star } from 'lucide-react';
-import { DotPattern } from './ui/dot-pattern';
+import { ArrowRight, PlayCircle, CheckCircle2, Star } from 'lucide-react';
 import heroBg from "../assets/hero-mockup.png";
 import { Safari } from './ui/safari';
+import notebook from "../assets/notebook.png";
+import chat from "../assets/chat.png"
+
+import { Button } from "@/components/ui/button"
+import { BorderBeam } from "@/components/ui/border-beam"
 
 
 const Hero: React.FC = () => {
   return (
-    <div className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden selection:bg-indigo-100 selection:text-indigo-900">
-       {/* <Meteors /> */}
-       <DotPattern/>
-       {/* <LightRays/> */}
+    <div className="relative pt-32 pb-10 lg:pt-48 lg:pb-10 overflow-hidden selection:bg-indigo-100 selection:text-indigo-900">
+      
       {/* Background Gradients */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-purple-200/40 rounded-full blur-[120px]" />
@@ -24,22 +26,24 @@ const Hero: React.FC = () => {
         <div className="hidden lg:block absolute top-[20%] left-[5%] animate-float hover:scale-110 transition-transform duration-500">
           <div className="relative w-20 h-20 bg-white rounded-2xl shadow-[0_20px_40px_-15px_rgba(79,70,229,0.3)] flex items-center justify-center transform -rotate-12 border border-slate-100/50 backdrop-blur-sm z-10">
             <div className="absolute inset-0 bg-linear-to-br from-indigo-50/50 to-white/50 rounded-2xl"></div>
-            <Code2 className="text-indigo-600 relative z-10 drop-shadow-sm" size={40} strokeWidth={1.5} />
+            {/* <Code2 className="text-indigo-600 relative z-10 drop-shadow-sm" size={40} strokeWidth={1.5} /> */}
+            <img src={chat}/>
           </div>
         </div>
 
-        <div className="hidden lg:block absolute bottom-[30%] left-[12%] animate-float-delayed hover:scale-110 transition-transform duration-500">
+        {/* <div className="hidden lg:block absolute bottom-[30%] left-[12%] animate-float-delayed hover:scale-110 transition-transform duration-500">
           <div className="relative w-16 h-16 bg-white rounded-2xl shadow-[0_20px_40px_-15px_rgba(236,72,153,0.3)] flex items-center justify-center transform rotate-6 border border-slate-100/50 backdrop-blur-sm z-10">
             <div className="absolute inset-0 bg-linear-to-br from-pink-50/50 to-white/50 rounded-2xl"></div>
             <BookOpen className="text-pink-500 relative z-10 drop-shadow-sm" size={32} strokeWidth={1.5} />
           </div>
-        </div>
+        </div> */}
 
         {/* Right Side Elements */}
         <div className="hidden lg:block absolute top-[25%] right-[5%] animate-float-slow hover:scale-110 transition-transform duration-500">
           <div className="relative w-24 h-24 bg-white rounded-3xl shadow-[0_20px_40px_-15px_rgba(245,158,11,0.3)] flex items-center justify-center transform rotate-12 border border-slate-100/50 backdrop-blur-sm z-10">
              <div className="absolute inset-0 bg-linear-to-br from-amber-50/50 to-white/50 rounded-3xl"></div>
-             <Headphones className="text-amber-500 relative z-10 drop-shadow-sm" size={48} strokeWidth={1.5} />
+             {/* <Headphones className="text-amber-500 relative z-10 drop-shadow-sm" size={48} strokeWidth={1.5} /> */}
+             <img src={notebook}/>
           </div>
         </div>
 
@@ -60,12 +64,25 @@ const Hero: React.FC = () => {
               ✨ Introducing Intervue AI
             </span>
             <ArrowRight size={12} className="text-slate-400 group-hover:text-indigo-500 group-hover:translate-x-0.5 transition-all" />
+             <BorderBeam
+        size={40}
+        initialOffset={20}
+        className="from-transparent via-yellow-500 to-transparent"
+        transition={{
+          type: "spring",
+          stiffness: 60,
+          damping: 20,
+        }}
+      />
           </a>
+          {/* <BorderBeam/> */}
+         
+
         </div>
 
         {/* Main Headline */}
         <h1 className="animate-fade-in-up opacity-0 max-w-4xl text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-slate-900 leading-[1.1] mb-6" style={{ animationDelay: '0.2s' }}>
-          Master Your Interviews <br className="hidden sm:block" />
+          Ace Your Interviews <br className="hidden sm:block" />
           With <span className="bg-linear-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">Real-Time AI</span>
         </h1>
 

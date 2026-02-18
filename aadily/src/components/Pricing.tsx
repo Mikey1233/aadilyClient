@@ -32,9 +32,9 @@ const plans = [
 
 export const Pricing: React.FC = () => {
   return (
-    <section id="pricing" className="py-24 bg-white relative overflow-hidden">
+    <section id="pricing" className="py-24 border-t border-slate-100 bg-white relative overflow-hidden">
        {/* Background blob */}
-       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-50 rounded-full blur-3xl -z-10"></div>
+       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-200 h-200 bg-brand-50 rounded-full blur-3xl -z-10"></div>
 
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
@@ -49,7 +49,7 @@ export const Pricing: React.FC = () => {
               className={`relative bg-white rounded-2xl p-8 border ${plan.popular ? 'border-brand-500 shadow-2xl scale-105 z-10' : 'border-slate-200 shadow-sm'} transition-transform`}
             >
               {plan.popular && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-brand-600 to-accent-600 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-linear-to-r from-brand-600 to-accent-600 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
                   Most Popular
                 </div>
               )}
