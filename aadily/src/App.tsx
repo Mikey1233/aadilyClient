@@ -7,10 +7,14 @@ import { Pricing } from "./components/Pricing";
 import HowItWorks from "./components/HowItWorks";
 import { ToolsConnect } from "./components/ToolsConnect";
 import Testimonials from "./components/Testimonials";
+import Cta from "./components/Cta";
+import FooterSignature from "./components/FooterSignature";
+
 
 const App: React.FC = () => {
-  return (
-    <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-indigo-100 selection:text-indigo-900">
+  return ( 
+   
+ <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-indigo-100 selection:text-indigo-900">
       <Navbar />
 
       <main>
@@ -21,6 +25,7 @@ const App: React.FC = () => {
         <ToolsConnect />
         <Testimonials />
         <Pricing />
+        <Cta/>
 
         {/* Features Section to pad out the landing page */}
         {/* <section id="features" className="py-24 bg-slate-50 relative overflow-hidden">
@@ -161,9 +166,11 @@ const App: React.FC = () => {
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-slate-100">
             <p className="text-slate-500 text-sm">
-              © 2024 Intervue AI. All rights reserved.
+              © 2026 Aadily AI. All rights reserved.
             </p>
             <div className="flex gap-4 mt-4 md:mt-0">
+             
+              {/* <AnimatedThemeTogglerDemo/> */}
               {/* Social placeholders */}
               <div className="w-5 h-5 bg-slate-200 rounded-full"></div>
               <div className="w-5 h-5 bg-slate-200 rounded-full"></div>
@@ -172,7 +179,10 @@ const App: React.FC = () => {
           </div>
         </div>
       </footer>
+     <FooterSignature/>
     </div>
+   
+   
   );
 };
 

@@ -1,21 +1,25 @@
 import { TextAnimate } from "./ui/text-animate";
+
 function Quote() {
   return (
     <section
       id="quote"
-      className="flex border-t border-slate-100 flex-col items-center justify-center gap-8 w-full p-2 md:p-14  z-20"
+      className="flex border-t border-slate-100 flex-col items-center justify-center gap-8 w-full p-6 md:p-14  z-20"
     >
       <blockquote className="max-w-3xl flex flex-col gap-4 text-left px-4">
         {/* nnan */}
         <TextAnimate
           className="text-md text-black md:text-2xl  font-medium mb-3"
-          animation="blurIn"
-          as="p"
+          animation="slideUp" by="word"
+          // as="p"
         >
-          Aadily has transformed our daily operations. Tasks that once consumed
+         Aadily has transformed our daily operations. Tasks that once consumed
           hours now complete in moments, freeing our team to focus on creativity
           and strategic growth.
         </TextAnimate>
+        
+          
+
         <div className="flex gap-4">
           <div className="size-10 rounded-full bg-primary border border-border">
             <img
