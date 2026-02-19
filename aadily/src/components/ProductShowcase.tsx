@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import {
   Zap,
   Triangle,
-  Link as LinkIcon,
+  
   LayoutGrid,
   User2,
   Bot,
@@ -183,7 +183,7 @@ const ProductShowcase: React.FC = () => {
 
           {/* ================= RIGHT COLUMN ================= */}
           <div className="flex flex-col">
-            <div className="   h-[420px]  relative mb-8 border border-slate-100 overflow-hidden flex items-center justify-center">
+            <div className="   h-105  relative mb-8 border border-slate-100 overflow-hidden flex items-center justify-center">
               <div className="relative z-20 w-16 h-16 bg-blue-600 rounded-2xl shadow-xl flex items-center justify-center transform hover:scale-105 transition-transform duration-300">
                 <Zap className="text-white fill-white" size={32} />
               </div>

@@ -4,8 +4,6 @@ import Hero from './components/Hero';
 import ProductShowcase from './components/ProductShowcase';
 import Quote from './components/Quote';
 import { Pricing } from './components/Pricing';
-// import { Newsletter } from './components/Newsletter';
-// import { HowItWorks } from './components/HowItWorks';
 import HowItWorks from './components/HowItWorks';
 import { ToolsConnect } from './components/ToolsConnect';
 
@@ -19,7 +17,7 @@ const App: React.FC = () => {
       
       <main>
         <Hero />
-        <ProductShowcase/>
+         <ProductShowcase/>
         <HowItWorks/>
        
         <Quote/>

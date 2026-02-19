@@ -1,5 +1,19 @@
+// // {
+// //   "files": [],
+// //   "references": [
+// //     { "path": "./tsconfig.app.json" },
+// //     { "path": "./tsconfig.node.json" }
+// //   ]
+// // }
+
 // {
 //   "files": [],
+//   "compilerOptions": {
+//     "baseUrl": "./",
+//     "paths": {
+//       "@/*": ["src/*"]
+//     }
+//   },
 //   "references": [
 //     { "path": "./tsconfig.app.json" },
 //     { "path": "./tsconfig.node.json" }
@@ -7,15 +21,36 @@
 // }
 
 {
-  "files": [],
   "compilerOptions": {
-    "baseUrl": "./",
+    "composite": true,
+    "tsBuildInfoFile": "./node_modules/.cache/tsconfig.app.tsbuildinfo",
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* --- ADD THESE LINES --- */
+    "baseUrl": ".", 
     "paths": {
-      "@/*": ["src/*"]
-    }
+      "@/*": ["./src/*"]
+    },
+    "jsx": "react-jsx", // Ensure this is still here from the last step!
+    /* ----------------------- */
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
   },
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "include": ["src"]
 }

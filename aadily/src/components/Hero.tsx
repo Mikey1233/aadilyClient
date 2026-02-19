@@ -1,11 +1,9 @@
 import React from 'react';
 import { ArrowRight, PlayCircle, CheckCircle2, Star } from 'lucide-react';
 // import heroBg from "../assets/hero-mockup.png";
-import { Safari } from './ui/safari';
+import { Safari } from '@/components/ui/safari';
 import notebook from "../assets/notebook.png";
 import chat from "../assets/chat.png"
-
-import { Button } from "@/components/ui/button"
 import { BorderBeam } from "@/components/ui/border-beam"
 
 
