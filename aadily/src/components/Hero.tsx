@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight, PlayCircle, CheckCircle2, Star } from 'lucide-react';
-import heroBg from "../assets/hero-mockup.png";
+// import heroBg from "../assets/hero-mockup.png";
 import { Safari } from './ui/safari';
 import notebook from "../assets/notebook.png";
 import chat from "../assets/chat.png"
@@ -112,16 +112,24 @@ const Hero: React.FC = () => {
         </div>
 
         {/* Interactive Demo Section - The "Functional" Part */}
-        <div className="w-full animate-fade-in-up opacity-0" style={{ animationDelay: '0.6s' }}>
-          <Safari
+        <div className="w-full backdrop:backdrop-blur-2xl bg-white/20 p-2 rounded-2xl relative animate-fade-in-up opacity-0" style={{ animationDelay: '0.6s' }}>
+        <div className="bg-[conic-gradient(from_230.29deg_at_51.63%_52.16%,#2400ff_0deg,#0087ff_67.5deg,#6c279d_198.75deg,#1826a3_251.25deg,#3667c4_301.88deg,#691eff_1turn)] -translate-x-1/2 absolute inset-0 left-1/2 h-1/4 w-3/4 animate-image-glow blur-[5rem] md:top-[10%] md:h-1/3"></div>
+          
+
+         <Safari
           url="aadily.com"
-        imageSrc={heroBg}
+          className='object-fit'
+        imageSrc={''}
           />
+          
+        
+          </div>
+        
              
         </div>
 
       </div>
-    </div>
+    // </div>
   );
 };
 

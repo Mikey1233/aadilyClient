@@ -9,18 +9,15 @@
 /* ============================= */
 
 :root {
-  /* Brand Colors (Teal-based like Intervue AI) */
   --brand-50: #f0fdfa;
   --brand-100: #ccfbf1;
   --brand-500: #14b8a6;
   --brand-600: #0d9488;
   --brand-900: #134e4a;
 
-  /* Typography */
   --font-sans: 'Inter', sans-serif;
   --radius: 0.625rem;
 
-  /* Light Theme Colors */
   --background: #ffffff;
   --foreground: #0f172a;
 
@@ -72,20 +69,14 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
 ::-webkit-scrollbar-thumb {
   background: #d1d5db;
   border-radius: 4px;
 }
-::-webkit-scrollbar-thumb:hover {
-  background: #9ca3af;
-}
+::-webkit-scrollbar-thumb:hover { background: #9ca3af; }
 
 /* ============================= */
 /* Utilities */
@@ -101,34 +92,71 @@ body {
 }
 
 /* ============================= */
-/* Custom Animations */
+/* PREMIUM ANIMATIONS */
 /* ============================= */
 
-.animate-fade-in-up {
-  animation: fadeInUp 0.8s ease-out forwards;
+/* Entrance */
+.animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
+.animate-fade-in { animation: fadeIn 1s ease-out forwards; }
+
+/* Floating */
+.animate-float { animation: float 6s ease-in-out infinite; }
+.animate-float-delayed { animation: float 6s ease-in-out 3s infinite; }
+.animate-float-slow { animation: float 8s ease-in-out 1s infinite; }
+
+/* Smoother premium float */
+.animate-float-smooth {
+  animation: floatSmooth 8s ease-in-out infinite;
 }
 
-.animate-fade-in {
-  animation: fadeIn 1s ease-out forwards;
-}
-
+/* Pulse */
 .animate-pulse-slow {
   animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-.animate-float {
-  animation: float 6s ease-in-out infinite;
+/* Orbit Rotation */
+.animate-orbit-rotate {
+  animation: orbitRotate 20s linear infinite;
 }
 
-.animate-float-delayed {
-  animation: float 6s ease-in-out 3s infinite;
+/* Glow Pulse */
+.animate-glow-pulse {
+  animation: glowPulse 3s ease-in-out infinite;
 }
 
-.animate-float-slow {
-  animation: float 8s ease-in-out 1s infinite;
+/* Scan */
+.animate-scan {
+  animation: scan 3s ease-in-out infinite;
 }
 
-/* Keyframes */
+/* Bar Grow */
+.animate-bar-grow {
+  animation: barGrow 2s ease-in-out infinite;
+}
+
+/* Divider Glow */
+.divider-glow {
+  position: relative;
+}
+
+.divider-glow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(20,184,166,0.5),
+    transparent
+  );
+  animation: dividerGlow 3s ease-in-out infinite;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* ============================= */
+/* KEYFRAMES */
+/* ============================= */
 
 @keyframes fadeInUp {
   0% { opacity: 0; transform: translateY(20px); }
@@ -141,13 +169,51 @@ body {
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
+  0%,100% { transform: translateY(0); }
   50% { transform: translateY(-20px); }
 }
 
+/* Premium Float */
+@keyframes floatSmooth {
+  0%   { transform: translateY(0) translateX(0); }
+  25%  { transform: translateY(-10px) translateX(5px); }
+  50%  { transform: translateY(-20px) translateX(0); }
+  75%  { transform: translateY(-10px) translateX(-5px); }
+  100% { transform: translateY(0) translateX(0); }
+}
+
 @keyframes pulse {
-  0%, 100% { opacity: 1; }
+  0%,100% { opacity: 1; }
   50% { opacity: .5; }
+}
+
+@keyframes orbitRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes glowPulse {
+  0%,100% {
+    box-shadow: 0 0 0px rgba(20,184,166,0.4);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(20,184,166,0.7);
+  }
+}
+
+@keyframes scan {
+  0%,100% { top: 0%; }
+  50% { top: 95%; }
+}
+
+@keyframes barGrow {
+  0%,100% { height: 40%; }
+  50% { height: 90%; }
+}
+
+@keyframes dividerGlow {
+  0%,100% { opacity: 0.2; }
+  50% { opacity: 0.8; }
 }
 
 /* ============================= */
@@ -179,15 +245,6 @@ body {
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
 }
 
 /* ============================= */
@@ -204,9 +261,6 @@ body {
   --popover: #1e293b;
   --popover-foreground: #f8fafc;
 
-  --primary: #14b8a6;
-  --primary-foreground: #ffffff;
-
   --secondary: #134e4a;
   --secondary-foreground: #f0fdfa;
 
@@ -218,7 +272,6 @@ body {
 
   --border: #1e293b;
   --input: #1e293b;
-  --ring: #14b8a6;
 }
 
 /* ============================= */
@@ -226,14 +279,11 @@ body {
 /* ============================= */
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-
-  body {
-    @apply bg-background text-foreground;
-  }
+  * { @apply border-border outline-ring/50; }
+  body { @apply bg-background text-foreground; }
 }
+
+/* Ripple */
 
 @theme inline {
   --animate-ripple: ripple var(--duration, 2s) ease calc(var(--i, 0) * 0.2s)

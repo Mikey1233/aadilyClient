@@ -1,61 +1,13 @@
-
-// import React from 'react';
-// import { Banner } from '@/components/Banner';
-// import { Header } from '@/components/Header';
-// import Hero  from '@/components/Hero';
-// import { HowItWorks } from '@/components/HowItWorks';
-// import { Platforms } from '@/components/Platforms';
-// import { TargetUsers } from '@/components/TargetUsers';
-// import { Features } from '@/components/Features';
-// import { SocialProof } from '@/components/SocialProof';
-// import { Pricing } from '@/components/Pricing';
-// import { Newsletter } from '@/components/Newsletter';
-// import { Footer } from '@/components/Footer';
-// import { BentoDemo } from './components/Grid';
-// import { Component } from './components/LigrayBg';
-
-// const App: React.FC = () => {
-//   return (
-//     <div className="min-h-screen flex flex-col w-full overflow-x-hidden">
-//        <Banner />
-//        <Hero/>
-//        {/* <Component/> */}
-//        {/* <p>Hello</p> */}
-//       {/* <Header /> */}
-//       {/* <Ligh */}
-//       {/* <main>
-//         <Hero />
-//         <div className='px-16'>
-//  <BentoDemo/>
-//         </div>
-       
-//         <HowItWorks />
-
-//         <Platforms />
-//         <TargetUsers />
-//         <Features />
-//         <SocialProof />
-//         <Pricing />
-//         <Newsletter />
-//       </main>
-//       <Footer />  */}
-
-//     </div>
-//   );
-// };
-
-
-// export default App
-
-
 import React from 'react';
 import Navbar from '@/components/Navbar'
 import Hero from './components/Hero';
 import ProductShowcase from './components/ProductShowcase';
 import Quote from './components/Quote';
 import { Pricing } from './components/Pricing';
-import { Newsletter } from './components/Newsletter';
-import { HowItWorks } from './components/HowItWorks';
+// import { Newsletter } from './components/Newsletter';
+// import { HowItWorks } from './components/HowItWorks';
+import HowItWorks from './components/HowItWorks';
+import { ToolsConnect } from './components/ToolsConnect';
 
 
 
@@ -69,8 +21,13 @@ const App: React.FC = () => {
         <Hero />
         <ProductShowcase/>
         <HowItWorks/>
+       
         <Quote/>
-        <Pricing/>
+        <ToolsConnect/>
+         <Pricing/>
+
+
+        
         
         
         {/* Features Section to pad out the landing page */}
