@@ -59,7 +59,7 @@ const Hero: React.FC = () => {
         <div className="animate-fade-in-up opacity-0" style={{ animationDelay: '0.1s' }}>
           <a href="#" className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-slate-200 bg-white/50 backdrop-blur-sm hover:bg-white/80 transition-colors group shadow-sm mb-8">
             <span className="text-xs font-semibold bg-linear-to-r from-indigo-500 to-purple-600 bg-clip-text text-transparent">
-              ✨ Introducing Intervue AI
+              ✨ Introducing Aadily AI
             </span>
             <ArrowRight size={12} className="text-slate-400 group-hover:text-indigo-500 group-hover:translate-x-0.5 transition-all" />
              <BorderBeam

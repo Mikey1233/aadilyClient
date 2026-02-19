@@ -1,33 +1,27 @@
-import React from 'react';
-import Navbar from '@/components/Navbar'
-import Hero from './components/Hero';
-import ProductShowcase from './components/ProductShowcase';
-import Quote from './components/Quote';
-import { Pricing } from './components/Pricing';
-import HowItWorks from './components/HowItWorks';
-import { ToolsConnect } from './components/ToolsConnect';
-
-
+import React from "react";
+import Navbar from "@/components/Navbar";
+import Hero from "./components/Hero";
+import ProductShowcase from "./components/ProductShowcase";
+import Quote from "./components/Quote";
+import { Pricing } from "./components/Pricing";
+import HowItWorks from "./components/HowItWorks";
+import { ToolsConnect } from "./components/ToolsConnect";
+import Testimonials from "./components/Testimonials";
 
 const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-indigo-100 selection:text-indigo-900">
-    
       <Navbar />
-      
+
       <main>
         <Hero />
-         <ProductShowcase/>
-        <HowItWorks/>
-       
-        <Quote/>
-        <ToolsConnect/>
-         <Pricing/>
+        <ProductShowcase />
+        <HowItWorks />
+        <Quote />
+        <ToolsConnect />
+        <Testimonials />
+        <Pricing />
 
-
-        
-        
-        
         {/* Features Section to pad out the landing page */}
         {/* <section id="features" className="py-24 bg-slate-50 relative overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -92,42 +86,88 @@ const App: React.FC = () => {
             <div>
               <h4 className="font-bold text-slate-900 mb-4">Product</h4>
               <ul className="space-y-2 text-sm text-slate-600">
-                <li><a href="#" className="hover:text-indigo-600">Features</a></li>
-                <li><a href="#" className="hover:text-indigo-600">Pricing</a></li>
-                <li><a href="#" className="hover:text-indigo-600">Enterprise</a></li>
+                <li>
+                  <a href="#" className="hover:text-indigo-600">
+                    Features
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-indigo-600">
+                    Pricing
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-indigo-600">
+                    Enterprise
+                  </a>
+                </li>
               </ul>
             </div>
-             <div>
+            <div>
               <h4 className="font-bold text-slate-900 mb-4">Resources</h4>
               <ul className="space-y-2 text-sm text-slate-600">
-                <li><a href="#" className="hover:text-indigo-600">Blog</a></li>
-                <li><a href="#" className="hover:text-indigo-600">Interview Guide</a></li>
-                <li><a href="#" className="hover:text-indigo-600">Question Bank</a></li>
+                <li>
+                  <a href="#" className="hover:text-indigo-600">
+                    Blog
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-indigo-600">
+                    Interview Guide
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-indigo-600">
+                    Question Bank
+                  </a>
+                </li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold text-slate-900 mb-4">Company</h4>
               <ul className="space-y-2 text-sm text-slate-600">
-                <li><a href="#" className="hover:text-indigo-600">About</a></li>
-                <li><a href="#" className="hover:text-indigo-600">Careers</a></li>
-                <li><a href="#" className="hover:text-indigo-600">Contact</a></li>
+                <li>
+                  <a href="#" className="hover:text-indigo-600">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-indigo-600">
+                    Careers
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-indigo-600">
+                    Contact
+                  </a>
+                </li>
               </ul>
             </div>
-             <div>
+            <div>
               <h4 className="font-bold text-slate-900 mb-4">Legal</h4>
               <ul className="space-y-2 text-sm text-slate-600">
-                <li><a href="#" className="hover:text-indigo-600">Privacy</a></li>
-                <li><a href="#" className="hover:text-indigo-600">Terms</a></li>
+                <li>
+                  <a href="#" className="hover:text-indigo-600">
+                    Privacy
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-indigo-600">
+                    Terms
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-slate-100">
-            <p className="text-slate-500 text-sm">© 2024 Intervue AI. All rights reserved.</p>
+            <p className="text-slate-500 text-sm">
+              © 2024 Intervue AI. All rights reserved.
+            </p>
             <div className="flex gap-4 mt-4 md:mt-0">
-               {/* Social placeholders */}
-               <div className="w-5 h-5 bg-slate-200 rounded-full"></div>
-               <div className="w-5 h-5 bg-slate-200 rounded-full"></div>
-               <div className="w-5 h-5 bg-slate-200 rounded-full"></div>
+              {/* Social placeholders */}
+              <div className="w-5 h-5 bg-slate-200 rounded-full"></div>
+              <div className="w-5 h-5 bg-slate-200 rounded-full"></div>
+              <div className="w-5 h-5 bg-slate-200 rounded-full"></div>
             </div>
           </div>
         </div>

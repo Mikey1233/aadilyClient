@@ -37,10 +37,11 @@ export const Pricing: React.FC = () => {
        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-200 h-200 bg-brand-50 rounded-full blur-3xl -z-10"></div>
 
       <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Simple, Transparent Pricing</h2>
+         <div className="mx-auto  mb-16 space-y-5 py-3 text-center"><h2 className="text-blue-500 font-mono text-[14px] font-medium tracking-tight">Simple, Transparent Pricing</h2><h2 className="mx-auto mb-2 max-w-3xl text-balance text-[42px] font-medium leading-tight tracking-tighter">Invest in your career. The ROI is one paycheck away.</h2></div>
+        {/* <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4"></h2>
           <p className="text-slate-600">Invest in your career. The ROI is one paycheck away.</p>
-        </div>
+        </div> */}
 
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto items-center">
           {plans.map((plan, idx) => (

@@ -88,7 +88,7 @@ const ProductShowcase: React.FC = () => {
   }, [isStreaming]);
 
   return (
-    <section className="py-24 border-t border-slate-100 bg-white">
+    <section className="pt-12 pb-24 border-t border-slate-100 bg-white">
       <div className=" w-full h-full p-5 md:p-7">
         <div className="max-w-xl mx-auto flex flex-col items-center justify-center gap-2">
           <h2 className="text-3xl md:text-4xl font-medium tracking-tighter text-center text-balance pb-1">
