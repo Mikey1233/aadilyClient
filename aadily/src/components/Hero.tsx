@@ -59,7 +59,7 @@ const Hero: React.FC = () => {
         <div className="animate-fade-in-up opacity-0" style={{ animationDelay: '0.1s' }}>
           <a href="#" className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-slate-200 bg-white/50 backdrop-blur-sm hover:bg-white/80 transition-colors group shadow-sm mb-8">
             <span className="text-xs font-semibold bg-linear-to-r from-indigo-500 to-purple-600 bg-clip-text text-transparent">
-              ✨ Introducing Aadily AI
+              ✨ The Smart AI Interview Coach Built for Job Seekers
             </span>
             <ArrowRight size={12} className="text-slate-400 group-hover:text-indigo-500 group-hover:translate-x-0.5 transition-all" />
              <BorderBeam
@@ -86,8 +86,7 @@ const Hero: React.FC = () => {
 
         {/* Subheadline */}
         <p className="animate-fade-in-up opacity-0 max-w-2xl text-lg sm:text-xl text-slate-600 mb-10 leading-relaxed" style={{ animationDelay: '0.3s' }}>
-          Your personal AI copilot for technical and behavioral interviews. 
-          Get instant feedback, coding hints, and confidence boosters live.
+          Stop freezing during tough questions. Aadily listens to your live interview and provides tailored, resume-backed responses in real-time.
         </p>
 
         {/* CTA Buttons */}

@@ -1,14 +1,7 @@
 //
 
 import React, { useEffect, useState } from "react";
-import {
-  Zap,
-  Triangle,
-  
-  LayoutGrid,
-  User2,
-  Bot,
-} from "lucide-react";
+import { Zap, Triangle, LayoutGrid, User2, Bot } from "lucide-react";
 import { Ripple } from "@/components/ui/ripple";
 
 const ProductShowcase: React.FC = () => {
@@ -17,7 +10,7 @@ const ProductShowcase: React.FC = () => {
   const [isStreaming, setIsStreaming] = useState(false);
 
   const fullMessage =
-    " Based on your calendar patterns and preferences, I recommend scheduling the team meeting for Tuesday at 2pm. This time slot has historically had the highest attendance rate, and it avoids conflicts with other recurring meetings.";
+    " Use the Q3 Brand Relaunch example. Mention how you reallocated the $50k budget toward social media. Highlight finishing 2 days early and a 25% reach increase.";
 
   /* -------------------------------
      Intersection Observer Trigger
@@ -92,11 +85,11 @@ const ProductShowcase: React.FC = () => {
       <div className=" w-full h-full p-5 md:p-7">
         <div className="max-w-xl mx-auto flex flex-col items-center justify-center gap-2">
           <h2 className="text-3xl md:text-4xl font-medium tracking-tighter text-center text-balance pb-1">
-            Empower Your Workflow with AI
+            Never Miss a Beat During Your Interview
           </h2>
           <p className="text-muted-foreground text-center text-balance font-medium">
-            Ask your AI Agent for real-time collaboration, seamless
-            integrations, and actionable insights to streamline your operations.
+            Aadily acts as your real-time memory bank, so you can recall your
+            best achievements under pressure.
           </p>
         </div>
       </div>
@@ -122,9 +115,9 @@ const ProductShowcase: React.FC = () => {
                   }`}
                 >
                   <div className="bg-blue-600 text-white p-3 rounded-2xl  shadow-md  text-[14px] font-normal leading-relaxed max-w-70 wrap-break-word">
-                    Hey, I need help scheduling a team meeting that works well
-                    for everyone. Any suggestions for finding an optimal time
-                    slot?
+                    Michael, can you walk me through a situation where you were
+                    under a tight deadline? What steps did you take to deliver
+                    successfully?
                   </div>
 
                   <User2 className="w-10 h-10 rounded-full p-1 border-2 border-white shadow-sm shrink-0" />
@@ -172,11 +165,11 @@ const ProductShowcase: React.FC = () => {
 
             <div className="px-2">
               <h3 className="text-xl font-bold text-slate-900 mb-3">
-                Real-time AI Collaboration
+                Experience live AI assistance
               </h3>
               <p className="text-slate-500 leading-relaxed text-base">
-                Experience real-time assistance. Ask your AI Agent to coordinate
-                tasks, answer questions, and maintain team alignment.
+                Aadily shows CV-based bullet points instantly, eliminating
+                awkward pauses and “umms” during interviews.
               </p>
             </div>
           </div>
@@ -201,8 +194,50 @@ const ProductShowcase: React.FC = () => {
               </div>
 
               <div className="absolute bottom-[25%] left-[25%] animate-float-slow">
-                <div className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center shadow-lg border-2 border-gray-700">
-                  <Zap size={20} className="text-green-400 fill-green-400" />
+                <div className="w-12 h-12 b rounded-full flex items-center justify-center ">
+                  {/* <Zap size={20} className="text-green-400 fill-green-400" /> */}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="96"
+                    height="96"
+                    viewBox="0 0 48 48"
+                  >
+                    <rect
+                      width="16"
+                      height="16"
+                      x="12"
+                      y="16"
+                      fill="#fff"
+                      transform="rotate(-90 20 24)"
+                    ></rect>
+                    <polygon
+                      fill="#1e88e5"
+                      points="3,17 3,31 8,32 13,31 13,17 8,16"
+                    ></polygon>
+                    <path
+                      fill="#4caf50"
+                      d="M37,24v14c0,1.657-1.343,3-3,3H13l-1-5l1-5h14v-7l5-1L37,24z"
+                    ></path>
+                    <path
+                      fill="#fbc02d"
+                      d="M37,10v14H27v-7H13l-1-5l1-5h21C35.657,7,37,8.343,37,10z"
+                    ></path>
+                    <path
+                      fill="#1565c0"
+                      d="M13,31v10H6c-1.657,0-3-1.343-3-3v-7H13z"
+                    ></path>
+                    <polygon fill="#e53935" points="13,7 13,17 3,17"></polygon>
+                    <polygon
+                      fill="#2e7d32"
+                      points="38,24 37,32.45 27,24 37,15.55"
+                    ></polygon>
+                    <path
+                      fill="#4caf50"
+                      d="M46,10.11v27.78c0,0.84-0.98,1.31-1.63,0.78L37,32.45v-16.9l7.37-6.22C45.02,8.8,46,9.27,46,10.11z"
+                    ></path>
+                  </svg>
                 </div>
               </div>
 
@@ -215,11 +250,12 @@ const ProductShowcase: React.FC = () => {
 
             <div className="px-2">
               <h3 className="text-xl font-bold text-slate-900 mb-3">
-                Seamless Integrations
+                Smart, Seamless Interview Intelligence
               </h3>
               <p className="text-slate-500 leading-relaxed text-base">
-                Unite your favorite tools for effortless connectivity. Boost
-                productivity through interconnected workflows.
+                Analyzes your resume and delivers seamless integration with
+                Google meet, Zoom, Team. Get personalized interview prompts in
+                real time.
               </p>
             </div>
           </div>

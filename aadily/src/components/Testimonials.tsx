@@ -3,44 +3,44 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Testimonials: React.FC = () => {
-  const testimonials = [
+const testimonials = [
     {
-      quote: "The hardest part of technical interviews is explaining your thought process while coding. Aadily AI helped me articulate my solutions clearly. I felt like I had a senior engineer guiding me through every LeetCode problem.",
+      quote: "I used to freeze up during behavioral rounds. Having Aadily sync to my phone was a game-changer; I could glance at my talking points without ever breaking eye contact with the recruiter.",
       name: "Sarah Jenkins",
-      title: "Software Engineer at Google",
+      title: "Marketing Director",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150"
     },
     {
-      quote: "This tool is worth its weight in gold. Instead of spending endless hours scrolling through forums for company-specific questions, Aadily generated a tailored prep plan for my Amazon loop in seconds. It was spot on.",
+      quote: "The 'Private Command Center' on my phone is pure genius. It pulled specific metrics from my resume I'd completely forgotten about. Landed a senior role at a top firm in two weeks.",
       name: "Michael Chen",
-      title: "Senior Developer at Amazon",
+      title: "Project Manager",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150"
     },
     {
-      quote: "Aadily is a game-changer for behavioral rounds. I used to freeze up when asked about my weaknesses. The AI coach helped me craft authentic, STAR-method answers that actually impressed my interviewers.",
+      quote: "Aadily is a lifesaver for the 'Tell me about a time' questions. It instantly mapped my past wins to the STAR method. My interviewer actually complimented how structured my answers were.",
       name: "Emily Rodriguez",
-      title: "Product Manager at Spotify",
+      title: "Operations Manager",
       image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&h=150"
     },
     {
-      quote: "I landed my dream job after just 3 weeks of practice with Aadily. The mock interviews felt so real that the actual interview seemed easy by comparison. The feedback was incredibly detailed and actionable.",
+      quote: "As a Sales Lead, confidence is everything. Knowing Aadily was in my browser sidebar analyzing the job description and suggesting rebuttals gave me the edge I needed to close the deal on my new job.",
       name: "James Patel",
-      title: "Data Engineer at Meta",
+      title: "Account Executive",
       image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&h=150"
     },
     {
-      quote: "As a career switcher, I was terrified of system design rounds. Aadily broke down complex concepts into digestible chunks and helped me walk through designs confidently. Got offers from two FAANG companies!",
+      quote: "The stealth setup is perfect. I used the mobile extension during a Zoom call, and it felt like having a career coach whispering the right keywords in my ear. Got two offers in the same month!",
       name: "Lisa Nguyen",
-      title: "Backend Engineer at Netflix",
+      title: "Customer Success Manager",
       image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=150&h=150"
     },
     {
-      quote: "The real-time feedback during mock interviews is what sets Aadily apart. It catches filler words, pacing issues, and unclear explanations instantly. My communication improved drastically within days.",
+      quote: "I was terrified of the 'Business Case' round. Aadily broke down the prompt and gave me a framework to answer instantly on my second screen. I’ve never felt more prepared for an interview.",
       name: "David Kim",
-      title: "Full Stack Developer at Stripe",
+      title: "Business Analyst",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&h=150"
     }
-  ];
+];
 
   const CARDS_PER_PAGE = 3;
   const totalPages = Math.ceil(testimonials.length / CARDS_PER_PAGE);

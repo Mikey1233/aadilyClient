@@ -1,4 +1,5 @@
 import { TextAnimate } from "./ui/text-animate";
+import ceo from "@/assets/ceo.jpg"
 
 function Quote() {
   return (
@@ -13,9 +14,7 @@ function Quote() {
           animation="slideUp" by="word"
           // as="p"
         >
-         Aadily has transformed our daily operations. Tasks that once consumed
-          hours now complete in moments, freeing our team to focus on creativity
-          and strategic growth.
+        We built Aadily to level the playing field. It’s not just about giving answers—it’s about ensuring your hard work and real-world achievements don't get lost in the heat of a high-pressure interview.
         </TextAnimate>
         
           
@@ -23,16 +22,16 @@ function Quote() {
         <div className="flex gap-4">
           <div className="size-10 rounded-full bg-primary border border-border">
             <img
-              src="https://randomuser.me/api/portraits/men/91.jpg"
+              src={ceo}
               alt="Alex Johnson"
               className="size-full rounded-full object-contain"
             />
           </div>
           <div className="text-left ">
             <cite className="text-lg font-medium  not-italic">
-              Adewale Abimbola
+              Abimbola Adewole, M.Ed.
             </cite>
-            <p className="text-sm">CEO, Aadily</p>
+            <p className="text-sm">Founder, Aadily</p>
           </div>
         </div>
       </blockquote>

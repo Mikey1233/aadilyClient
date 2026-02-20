@@ -9,7 +9,7 @@ const HowItWorks: React.FC = () => {
           How it works
         </h2>
         <h2 className="mx-auto  max-w-3xl text-balance text-[42px] font-medium leading-tight tracking-tighter">
-          AI-Powered Intelligence in 3 Steps
+          Smarter Interview Prep in 3 Simple Steps
         </h2>
       </div>
       <div className="mx-auto flex max-w-6xl items-center pt-10 justify-center pb-24 px-4 sm:px-6 lg:px-8">
@@ -45,7 +45,7 @@ const HowItWorks: React.FC = () => {
 
             <div className="flex size-full flex-col items-center justify-between gap-y-3.5 p-5 pt-10">
               <p className="flex items-center justify-center text-xl font-semibold text-slate-900">
-                Configure
+                Personalize
               </p>
 
               {/* Visual Container */}
@@ -75,8 +75,7 @@ const HowItWorks: React.FC = () => {
 
               <div className="flex w-full items-start justify-center text-center pb-6">
                 <p className="text-base font-normal text-slate-500 leading-relaxed max-w-xs">
-                  Upload your resume and job description. We extract key
-                  requirements automatically.
+                Upload your resume and job description. Aadily analyzes your experience and matches it to the role’s key requirements.
                 </p>
               </div>
             </div>
@@ -218,7 +217,7 @@ const HowItWorks: React.FC = () => {
 
             <div className="flex size-full flex-col items-center justify-between gap-y-3.5 p-5 pt-10">
               <p className="flex items-center justify-center text-xl font-semibold text-slate-900">
-                Analyze
+                Improve
               </p>
 
               {/* Visual Container */}

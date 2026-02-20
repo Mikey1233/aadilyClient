@@ -9,6 +9,7 @@ import { ToolsConnect } from "./components/ToolsConnect";
 import Testimonials from "./components/Testimonials";
 import Cta from "./components/Cta";
 import FooterSignature from "./components/FooterSignature";
+import FAQ from "./components/Faq";
 
 
 const App: React.FC = () => {
@@ -24,7 +25,9 @@ const App: React.FC = () => {
         <Quote />
         <ToolsConnect />
         <Testimonials />
+
         <Pricing />
+<FAQ/>
         <Cta/>
 
         {/* Features Section to pad out the landing page */}
